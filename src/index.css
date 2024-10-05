@@ -52,7 +52,7 @@ canvas {
 
   .size-btn {
     @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all;
-  }
+}
 
   .common-padding {
     @apply sm:py-32 py-20 sm:px-10 px-5;
