@@ -12,27 +12,18 @@ const Features = () => {
       scrollTrigger: {
         trigger: "#exploreVideo",
         toggleActions: "play pause reverse restart",
-        start: "-10% bottom%",
+        start: "-10% bottom",
       },
       onComplete: () => {
         videoRef.current.play();
       },
     });
 
-    animateWithGsap("#features_title", {
-      y: 0,
-      opacity: 1,
-    });
+    animateWithGsap("#features_title", { y: 0, opacity: 1 });
     animateWithGsap(
       ".g_grow",
-      {
-        scale: 1,
-        opacity: 1,
-        ease: "power1",
-      },
-      {
-        scrub: 5.5,
-      }
+      { scale: 1, opacity: 1, ease: "power1" },
+      { scrub: 5.5 }
     );
     animateWithGsap(".g_text", {
       y: 0,
@@ -44,7 +35,7 @@ const Features = () => {
 
   return (
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
-      <div className="screen-max-width">
+      <div className="screen-max-wdith">
         <div className="mb-12 w-full">
           <h1 id="features_title" className="section-heading">
             Explore the full story.
@@ -63,7 +54,7 @@ const Features = () => {
             <div className="relative h-[50vh] w-full flex items-center">
               <video
                 playsInline
-                id="explore_video"
+                id="exploreVideo"
                 className="w-full h-full object-cover object-center"
                 preload="none"
                 muted
@@ -79,14 +70,14 @@ const Features = () => {
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
                     src={explore1Img}
-                    alt="Titanium"
+                    alt="titanium"
                     className="feature-video g_grow"
                   />
                 </div>
                 <div className="overflow-hidden flex-1 h-[50vh]">
                   <img
                     src={explore2Img}
-                    alt="Titanium2"
+                    alt="titanium 2"
                     className="feature-video g_grow"
                   />
                 </div>
@@ -95,15 +86,16 @@ const Features = () => {
               <div className="feature-text-container">
                 <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
-                    iphone 15 Pro is{" "}
+                    iPhone 15 Pro is{" "}
                     <span className="text-white">
                       the first iPhone to feature an aerospace-grade titanium
                       design
                     </span>
                     , using the same alloy that spacecrafts use for missions to
-                    Mars
+                    Mars.
                   </p>
                 </div>
+
                 <div className="flex-1 flex-center">
                   <p className="feature-text g_text">
                     Titanium has one of the best strength-to-weight ratios of
@@ -111,7 +103,7 @@ const Features = () => {
                     <span className="text-white">
                       lightest Pro models ever.
                     </span>
-                    You'll notice the difference the moment you pick one up
+                    You'll notice the difference the moment you pick one up.
                   </p>
                 </div>
               </div>
